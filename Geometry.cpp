@@ -6,7 +6,11 @@
 
 int main() {
 	std::cout<<"Hello!\n";
-	Point p {10,23};
+	Point p {{1.f,2}};
+	p.display();
+	Point q = p;
+	q.display();
+	Point r;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
