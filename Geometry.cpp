@@ -2,28 +2,12 @@
 //
 
 #include <iostream>
-#include <cstdio>
+#include "Works/Point.h"
 
-// to header commences
-struct Point {
-	float _x;
-	float _y;
-public:
-	Point(float x,float y);
-};
-// to header ends
-
-int main()
-{
+int main() {
 	std::cout<<"Hello!\n";
 	Point p {10,23};
 }
-
-// to cpp commences
-Point::Point(float x,float y) : _x(x),_y(y) {
-	std::printf("Initialied %f,%f\n",_x,_y);
-}
-// to cpp ends
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
