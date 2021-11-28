@@ -12,6 +12,12 @@ int main() {
 	q.display(); std::cout<<'\n';
 	Point r = Point::add(p,q);
 	r.display(); std::cout<<'\n';
+	std::vector<Point> rs;
+	rs.push_back(p);
+	rs.push_back(q);
+	rs.push_back(r);
+	Point s {Point::add(rs)};
+	s.display(); std::cout<<'\n';
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
